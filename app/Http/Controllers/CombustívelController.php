@@ -22,3 +22,4 @@ class CombustívelController extends Controller
         return view('resultado',['combustibel'=>$combustivel,'valor'=>$valor]);
     }
 }
+?>

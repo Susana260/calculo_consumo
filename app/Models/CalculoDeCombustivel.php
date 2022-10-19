@@ -16,7 +16,7 @@ class CalculoDeCombustivel extends Model
         $distancia = $_GET['distancia'];
         $autonomia = $_GET['autonomia'];
 
-        $consumoGasolina = ($distancia / $autonomia) * $valorcombustivel;
+        $consumoGasolina = round(($distancia / $autonomia) * $valorcombustivel,2);
         
         return $consumoGasolina;
     }
